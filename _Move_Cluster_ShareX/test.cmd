@@ -1,0 +1,1 @@
+_Move_Cluster_ShareX.cmd \\CS01CORP\ROOT\APPS\COMMON\ORACLE \\dv01fc1H\home02\A692840  %1

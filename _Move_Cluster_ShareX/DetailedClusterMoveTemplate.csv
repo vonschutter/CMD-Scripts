@@ -1,0 +1,2 @@
+DFS Source URL, Destination Server (just the hostname), Destination Drive (e.g. C-Z$), Destination Cluster (Cluster name), Destination Cluster Resource, Destination Target Root Path (not including DRIVE LETTER:\)
+\\dvt1fc1g\root\files\corp\is\940510\cc,dv01fc1h,h,dsp01fc,sls,corp\is\940510\cc
