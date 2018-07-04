@@ -1,8 +1,33 @@
 # CMD-Scripts
 
 ## Synopsis
-These are a collection of command scripts created for to run in the Windows terminal. These should run on any version of windows unless its the NT era. 
- code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+These are a collection of administrative command scripts created to run in the Windows terminal. These should run on any version of windows unless its the NT era. 
+
+As instructed by Tim Hill in the book "Windos NT shell scripting", these scripts make extensive use of FÖR loops and calling sub routines to make the code manageable and limit goofups is several people are touching them at the same time. 
+
+### Example 1
+for %%d in (%_dependencies%) do (call :VfyPath %%d)
+	if not {%RET%}=={0} (set _ERRMSG="An unrecoverable error has occured..." & call :DispErr !
+			) else (
+			goto MAIN)
+	endlocal & goto eof
+ 
+ 
+### Example 2
+ And sub routines use SETLOCAL and ENDLOCAL as well as sometimes PUSH and POPD where relevant to maintain operability. 
+ :VfyPath
+	setlocal
+	set _LocalVfy=%~$PATH:1
+	if {"%_LocalVfy%"}=={""} (
+		call :Get_dep %1
+		) else (
+		echo Dependency %1 satisfied....)
+
+		if defined RET if not {%RET%}=={0} (set _ERRMSG="File %1 is not in the PATH!" & call :DispErr !)
+	set _LocalVfy=
+	endlocal & goto eof
+:End_VfyPath
+ 
 
 ## Motivation
 These scripts are added and somewhat mainetained here so that someone else may find them useful. 
@@ -11,3 +36,6 @@ These scripts are added and somewhat mainetained here so that someone else may f
 
 Simply place these scripts in a handy location.   
 
+## License
+GPL v3 Please 
+So kindly share back cool changes that you make so that othesrs may enjoy. 
