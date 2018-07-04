@@ -18,15 +18,15 @@ endlocal & goto eof
 And sub routines use SETLOCAL and ENDLOCAL as well as sometimes PUSH and POPD where relevant to maintain operability. 
 ```
 :VfyPath
-	setlocal
-	set _LocalVfy=%~$PATH:1
-	if {"%_LocalVfy%"}=={""} (
-		call :Get_dep %1
-		) else (
-		echo Dependency %1 satisfied....)
-		if defined RET if not {%RET%}=={0} (set _ERRMSG="File %1 is not in the PATH!" & call :DispErr !)
-	set _LocalVfy=
-	endlocal & goto eof
+   setlocal
+   set _LocalVfy=%~$PATH:1
+   if {"%_LocalVfy%"}=={""} (
+	call :Get_dep %1
+	) else (
+	echo Dependency %1 satisfied....)
+	if defined RET if not {%RET%}=={0} (set _ERRMSG="File %1 is not in the PATH!" & call :DispErr !)
+   set _LocalVfy=
+   endlocal & goto eof
 :End_VfyPath
  ```
 
