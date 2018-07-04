@@ -6,17 +6,17 @@ These are a collection of administrative command scripts created to run in the W
 As instructed by Tim Hill in the book "Windos NT shell scripting", these scripts make extensive use of FÖR loops and calling sub routines to make the code manageable and limit goofups is several people are touching them at the same time. 
 
 ### Example 1
-
+```
 for %%d in (%_dependencies%) do (call :VfyPath %%d)
 	if not {%RET%}=={0} (set _ERRMSG="An unrecoverable error has occured..." & call :DispErr !
 			) else (
 			goto MAIN)
 endlocal & goto eof
- 
+``` 
  
 ### Example 2
 And sub routines use SETLOCAL and ENDLOCAL as well as sometimes PUSH and POPD where relevant to maintain operability. 
-
+```
 :VfyPath
 	setlocal
 	set _LocalVfy=%~$PATH:1
@@ -28,7 +28,7 @@ And sub routines use SETLOCAL and ENDLOCAL as well as sometimes PUSH and POPD wh
 	set _LocalVfy=
 	endlocal & goto eof
 :End_VfyPath
- 
+ ```
 
 ## Motivation
 These scripts are added and somewhat mainetained here so that someone else may find them useful. 
