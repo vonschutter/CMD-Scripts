@@ -1,4 +1,5 @@
-# Administrative Commands                                       		              _Check_Homedir_Sec_Config.cmd
+# Administrative Commands                                       		              
+## _Check_Homedir_Sec_Config.cmd
 
 ## NAME
 _Check_Homedir_Sec_Config.cmd: Home directory security configuration checker.
