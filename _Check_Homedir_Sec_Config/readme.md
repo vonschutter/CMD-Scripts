@@ -19,10 +19,10 @@ _Check_Homedir_Sec_Config is a simple shell script that parses the Present Worki
 ## OPTIONS
 
 The operations of the script can be modified in the header of the file in the “Settings” section as follows:
-
+```
 **********   Settings *************
 
-             Perm can be: 
+Perm can be: 
 R Read
 C  Change (write)
 F  Full control
@@ -32,12 +32,16 @@ X  Execute (Special access)
 E  Read (Special access)
 W  Write (Special access)
 D  Delete (Special access)
+```
 
+```
  _WINDOMAIN    = The NetBIOS domain that the permissions will reference
  _ERR_HANDLER  = The action to take after a critical un-resolvable error has occurred 
  _dependencies = Files that this script relies on
  _default_exe_store = is the network location that executables can be downloaded from if required
-		
+
+```
+
 The default critical error handler is a value where you can enter the commands that you want to run if a critical error occurs. For example if you want to run a script in case of an error then enter it here, escaping any reserved characters with the caret symbol "^". Syntax: command ^& command2 ^& command…n.
 
 set _ERR_HANDLER=pause ^& exit
