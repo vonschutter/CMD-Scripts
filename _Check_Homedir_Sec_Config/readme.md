@@ -43,12 +43,12 @@ D  Delete (Special access)
 ```
 
 The default critical error handler is a value where you can enter the commands that you want to run if a critical error occurs. For example if you want to run a script in case of an error then enter it here, escaping any reserved characters with the caret symbol "^". Syntax: command ^& command2 ^& command…n.
-
+```
 set _ERR_HANDLER=pause ^& exit
 set _dependencies=xcacls.exe fileacl.exe
-set _default_exe_store=\\cs01corp\root\files\corp\IS\Dept\InfrastructureSystems\FilePrint\BIN
- 
-. 
+set _default_exe_store=\\serverXXX\root\files\corp\IS\Dept\InfrastructureSystems\FilePrint\BIN
+```
+
 
 ## EXAMPLES
 ```
@@ -58,13 +58,14 @@ Set _default_exe_store=\\MyFileSserver\root\files\corp\IS\Dept\InfrastructureSys
 ```
 
 ## EXIT STATUS
-```
+
 _Check_Homedir_Sec_Config does not return exit codes. 
-```
+
 
 ## FILES
-```
+
 _Check_Homedir_Sec_Config depends on the following executables:
+```
     1. xcacls.exe
     2. fileacl.exe
 ```
