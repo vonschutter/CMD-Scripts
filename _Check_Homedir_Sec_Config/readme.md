@@ -6,9 +6,9 @@ _Check_Homedir_Sec_Config.cmd: Home directory security configuration checker.
 ## SYNOPSIS
 
  The syntax of this command is:
- '''
+```
 	_Check_Homedir_Sec_Config.cmd
-'''
+```
 
 NOTE: The shell script expects your Present Working Directory to be the home folder to check
 
