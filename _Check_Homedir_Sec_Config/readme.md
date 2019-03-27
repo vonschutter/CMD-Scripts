@@ -51,23 +51,23 @@ set _default_exe_store=\\cs01corp\root\files\corp\IS\Dept\InfrastructureSystems\
 . 
 
 ## EXAMPLES
-
+```
 Set _ERR_HANDLER=pause ^& exit
 Set _dependencies=xcacls.exe fileacl.exe
 Set _default_exe_store=\\MyFileSserver\root\files\corp\IS\Dept\InfrastructureSystems\FilePrint\BIN
-
+```
 
 ## EXIT STATUS
-
+```
 _Check_Homedir_Sec_Config does not return exit codes. 
-
+```
 
 ## FILES
-
+```
 _Check_Homedir_Sec_Config depends on the following executables:
     1. xcacls.exe
     2. fileacl.exe
-
+```
 ## SEE ALSO
 
 
