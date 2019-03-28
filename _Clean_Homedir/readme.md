@@ -41,7 +41,7 @@ Examples for settings:
 ```
     1. set _ERR_HANDLER=pause ^& exit
     2. set _dependencies=7Z.exe dfscmd.exe
-    3. set _default_exe_store=\\cs01corp\root\files\Corp\IS\Dept\InfrastructureSystems\ FilePrint\Scripts\Shell Programs\bin
+    3. set _default_exe_store=\\server\root\files\Corp\IS\Dept\Scripts\Shell Programs\bin
 ```
 
 Examples of how to call the script:
