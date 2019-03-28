@@ -34,7 +34,7 @@ The following options are supported:
 
 To move a single resource, the source and destination can be provided directly:
 ```
-_Move_Cluster_Share.cmd \\CS01CORP\Root\Apps\Corp\RO\965180\APPS  \\dv03fc2i\i$\corp\123456
+_Move_Cluster_Share.cmd \\srv1\Root\Apps\Corp\RO\965180\APPS  \\srv2\i$\corp\123456
 ```
 To trouble shoot the _Move_Cluster_Share.cmd the –debug switch can be included in the parameters to display extremely verbose output. This is only useful if you encounter unexpected behavior. 
 
@@ -51,7 +51,7 @@ Enumerated meanings of the RET variables:
 
 
 ## FILES
-_Move_Cluster_Share.cmd depends on the following no-standard windows executables: 
+_Move_Cluster_Share.cmd depends on the following non-standard windows executables: 
 ```
     1. Cluster.exe: Cluster configuration utility
     2. robocopy.exe: Site mirroring utility
