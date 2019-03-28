@@ -47,7 +47,7 @@ _dependencies = Files that this script relies on
 	Set _UserOrGroup=everyone
 	Set _ERR_HANDLER=pause ^& exit
 	Set _dependencies=cluster.exe
-	Set _default_exe_store=\\cs01corp\root\files\corp\IS\Dept\InfrastructureSystems\FilePrint\BIN
+	Set _default_exe_store=\\server\root\files\corp\IS\Dept\FilePrint\BIN
 ```
 ## EXIT STATUS
 
