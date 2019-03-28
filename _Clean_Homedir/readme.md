@@ -58,21 +58,14 @@ _Clean_Homedir.cmd does not return exit codes.
 Internally the compression tool uses the following return codes:
 
 ```
-
-Code
-Meaning
-0
-No error
-1
-Warning (Non fatal error(s)). For example, some files were locked by other application during compressing. So they were not compressed.
-2
-Fatal error
-7
-Command line error
-8
-Not enough memory for operation
-255
-User stopped the process
+Code	Meaning
+0	No error
+1 	Warning (Non fatal error(s)). For example, some files were locked by other application during compressing. 
+	So they were not compressed.
+2	Fatal error
+7 	Command line error
+8	Not enough memory for operation
+255	User stopped the process
 ```
 
 
