@@ -27,7 +27,7 @@ The operations of the script can be modified in the header of the file in the â€
 Enter the setting that affects this shell scripts' operation.
 
 _PERM = the permission to assign at the share level
-          Perm can be: 
+Perm can be: 
 R  Read
 C  Change (write)
 F  Full control
