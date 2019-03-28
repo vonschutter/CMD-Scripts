@@ -1,9 +1,9 @@
 # Administrative Commands                                       		               
 
-# NAME
+## NAME
 _Count_All_AD_User_Objects.cmd: Active Directory object counter.
      
-# SYNOPSIS
+## SYNOPSIS
 
 The syntax of this command is: 
 ```
@@ -11,22 +11,22 @@ _Count_All_AD_User_Objects.cmd
 ```
 
 
-# DESCRIPTION
+## DESCRIPTION
 _Count_All_AD_User_Objects.cmd queries active directory and returns an object count. This is echoed to the screen. If _Count_All_AD_User_Objects.cmd is included in another script, an environment variable %_count% will be left in the environment after command execution has completed. 
 
 
-# OPTIONS
+## OPTIONS
 There are no options.
 
-# EXAMPLES
+## EXAMPLES
 
 
-# EXIT STATUS
+## EXIT STATUS
 
 
 
 
-# FILES
+## FILES
 _Count_All_AD_User_Objects.cmd depends on the file:
 ``` 
     • DSQUERY.EXE
