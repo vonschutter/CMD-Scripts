@@ -1,4 +1,4 @@
-# Administrative Commands                                       		               _Count_All_AD_User_Objects.cmd
+# Administrative Commands                                       		               
 
 # NAME
 _Count_All_AD_User_Objects.cmd: Active Directory object counter.
