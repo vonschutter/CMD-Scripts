@@ -1,9 +1,20 @@
 @setlocal DisableDelayedExpansion
 @echo off
-
+@echo %1 %2 %3 %4 %5 %6 %7 %8 %9 |find /i "debug" &&(@echo on & set trace=echo) || (@echo off & set trace=rem)
+set _VER_%0=1.0.0
+@title %0 : -- version %_VER_%0% date: 9/13/2006
+set #INTEG_%0=NOT_SET!
+::
+::
+::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::  Copied from MAS; slight modification.
+::
+::
 ::  For command line switches, check https://massgrave.dev/command_line_switches.html
 ::  If you want to better understand script, read from MAS separate files version.
-
+::
 ::============================================================================
 ::
 ::   This script is a part of 'Microsoft Activation Scripts' (MAS) project.
@@ -12,6 +23,33 @@
 ::      Email: windowsaddict@protonmail.com
 ::
 ::============================================================================
+::
+::	Dependencies:
+::
+::
+::
+:: Variables and Assignments
+:: Passed From CONSOLE!
+::		%1 		-> File name that maps user ID to home root path.
+::
+:: Common TS
+::		%DEBUG% -> 1 value to turn on tracing
+::		%ECHO% -> On Value to turn on echo
+::		%RET% -> Argument Passing Value
+::
+:: 	Please list command files to be run here in the following format:
+::
+:: 	:TITLE
+:: 	Description of the pupose of called command file.
+:: 	call <path>\command.cmd or command...
+::
+::	if this script is modified, it MUST be loged!
+::
+::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 
 
 
