@@ -1,26 +1,26 @@
-#Administrative Commands                                         _Remote_List_Software.cmd
+# Administrative Commands                                         _Remote_List_Software.cmd
 
-NAME
+## NAME
 
 _Register_Win_Script_Default_KMS.cmd: a utility to register Windows for 180 days.
 
-##SYNOPSIS
+## SYNOPSIS
 
  The syntax of this command is:
  _Register_Win_Script_Default_KMS.cmd auto
 
 
-##DESCRIPTION
+## DESCRIPTION
 
 _Register_Win_Script_Default_KMS.cmd  is a simple shell script that will register your computer so that you will have full usability for 180 days. Unless you register your copy of windows you will lack som functionality like the ability to customize your desktop.
 
 
 
-#3OPTIONS
+## OPTIONS
 
 There are no configurable parameters for this shell script.
 
-##EXAMPLES
+## EXAMPLES
 
 _Register_Win_Script_Default_KMS.cmd auto
 
@@ -38,22 +38,18 @@ Example Extract From Autounattend.xml:
 ```
 
 
-##EXIT STATUS
+## EXIT STATUS
 
 Standard error only
 
 
-##FILES
+## FILES
 
 _Register_Win_Script_Default_KMS.cmd
 
-##SEE ALSO
+## SEE ALSO
 
 
 
-##NOTES
+## NOTES
 
-
-
-
-NOTES
